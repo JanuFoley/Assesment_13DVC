@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Wellington Waterfront</title>
+    <!-- This makes helps the website be more consisitent across different screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- This is the reference to the fonts that the css and website is using -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;800&display=swap" rel="stylesheet">
+    <!-- This is used to try and help the website and css be more consistent across different browsers -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"/>
+    <!-- This is the reference to the css that the website is using -->
+    <link href="{{ url_for('static', filename='DVC_WATERFRONT.css') }}" rel="stylesheet">
+</head>
+
+<body>
+<nav>
+    <!-- Inputs: role
+    This is the nav bar that sits at the top of the website and allows users to go through the different pages
+    Outputs: links(Home, Dictionary, Admin, Logout, login) -->
+    <div class="container">
+        <!-- These are the links to each page that is extended from the base.html file -->
+        <div class="navbar-links">
+            <a href="/">Construction</a>
+            <a href="/Dictionary">Accessibility</a>
+        </div>
+    </div>
+</nav>
+{% block pageheading %}
+<h1 class="English-box-heading">Wellington Waterfront</h1>
+{% endblock %}
+
+{% block main %}
+{% endblock %}
+</body>
+
+</html>
