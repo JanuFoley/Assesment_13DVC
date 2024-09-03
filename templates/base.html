@@ -14,28 +14,30 @@
     <link href="{{ url_for('static', filename='DVC_WATERFRONT.css') }}" rel="stylesheet">
 </head>
 
-<body>
-<nav>
-    <!-- Inputs: role
-    This is the nav bar that sits at the top of the website and allows users to go through the different pages
-    Outputs: links(Home, Dictionary, Admin, Logout, login) -->
-    <div class="container">
-        <!-- These are the links to each page that is extended from the base.html file -->
-        <div class="navbar-links">
-        </div>
-    </div>
-</nav>
-{% block pageheading %}
-    <h1 class="English-box-heading">Whenua ki te wai</h1>
-    <h2 class="English-box-heading-second">Wellington Waterfront</h2>
+<body class="background">
 
+{% block pageheading %}
+    <h1>Whenua ki te wai</h1>
+    <h2>Wellington Waterfront</h2>
 {% endblock %}
 
 {% block main %}
-    <div class="heading-container">
-        <h1 class="English-box-heading">Location</h1>
-        <h1 class="English-box-heading">Accessibility</h1>
-    </div>
+   <div class="container">
+        <div class="item">
+           <h3>Accessibility</h3>
+           <img src="/static/images/Website Development-09.jpg">
+            <h4>The water should be accessible for all. From toddlers to teenagers to grandparents. This development in
+                braces the sea life of the ocean to create a new swimming area in the heart of the capital with water
+                slides, jumping area, steps into the water and a ramp going in and out of the water.
+            </h4>
+       </div>
+       <div class="item">
+           <h3>Location</h3>
+           <img src="/static/images/Website Development-07.jpg">
+           <img src="/static/images/Website Development-08.jpg">
+       </div>
+
+   </div>
 {% endblock %}
 </body>
 
