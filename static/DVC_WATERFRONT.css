@@ -86,6 +86,29 @@ img {
     background-image: url("/static/images/Website Development-10.jpg");
 }
 
+a:link {
+  color: #000000;
+  background-color: rgba(152, 224, 255, 0.5);
+  text-decoration: none;
+}
+
+a:visited {
+  color: #000000;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #000000;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
 @media only screen and (max-width: 600px) {
     .container {
         width: 100%;
