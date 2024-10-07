@@ -41,10 +41,17 @@ h4 {
 
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
     margin-top: 4rem;
 }
+
+.container-background {
+    background-color: rgba(100, 149, 237, 0.8);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 
 .container-left {
     display: flex;
@@ -56,13 +63,20 @@ h4 {
 }
 
 .item {
+    flex: 1;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-right: 20px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
 }
 
 .item-location {
+    flex: 1;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -75,31 +89,32 @@ h4 {
 
 .item:last-child {
     margin-right: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
 }
 
 img {
-    width: 60%;
+    width: 100%;
     height: auto;
     margin-bottom: 50px;
     border: 5px solid;
-    border-color: rgba(152, 224, 255, 0.5);
+    border-color: rgba(13, 97, 122, 0.8);
 }
 
 .img2 {
-    width: 80%;
+    width: 100%;
     height: auto;
-    margin-bottom: 50px;
     margin-top: 1.2rem;
 }
 
 .text {
-    width: 61%;
-    font-size: 1.8rem ;
+    width: 100%;
+    font-size: 1.5rem ;
     font-weight: normal;
     align-items: center;
     margin-left: 0.8rem;
     margin-bottom: 1rem;
-    background-color: rgba(152, 224, 255, 0.5);
 }
 
 .background {
@@ -112,7 +127,6 @@ img {
 
 a:link {
   color: #000000;
-  background-color: rgba(152, 224, 255, 0.5);
   text-decoration: none;
 }
 
