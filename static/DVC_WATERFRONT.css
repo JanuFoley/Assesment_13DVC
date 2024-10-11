@@ -41,15 +41,18 @@ h4 {
 
 .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
     margin-top: 4rem;
+    overflow-x: hidden;
 }
 
 .container-background {
     background-color: rgba(207, 224, 252, 0.9);
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
+    padding: 0 1rem;
 }
 
 
@@ -165,7 +168,25 @@ a:active {
     }
 
     .product-box {
-        width: 49%;
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .item-location {
+        margin-left: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 2rem;
     }
 }
 
@@ -173,5 +194,13 @@ a:active {
 @media only screen and (max-width: 400px) {
     .product-box {
         width: 100%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
     }
 }
